@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/prueba2/blog</id>
-    <title>My Site Blog</title>
+    <title>MANUALES DE INSTALACIÓN Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/prueba2/blog"/>
-    <subtitle>My Site Blog</subtitle>
-    <icon>https://github.com/prueba2/img/favicon.ico</icon>
+    <subtitle>MANUALES DE INSTALACIÓN Blog</subtitle>
+    <icon>https://github.com/prueba2/img/6.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://github.com/prueba2/blog/welcome</id>
