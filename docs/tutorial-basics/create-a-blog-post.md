@@ -1,34 +1,37 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
+# Instalación del Facturador
+#### Docker | Linux | SSL externo 
 
-# Create a Blog Post
+### Pasos
+* Para instalar debe ejecutar el script evitando instalar el SSL, le será consultado en el proceso y deberá ingresar "n"
+* Finalizada la instalación debe dirigirse a la ruta de instalación
+    ~~~
+    cd /root/facturadorpro31/
+    ~~~
+* Debe editar el archivo **.env**
+    ~~~
+    nano .env
+    ~~~
+    Dentro del editor ubicar los parámetros y cambiarlos
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+    **Antes**
+    ~~~
+    APP_URL=http://${APP_URL_BASE} FORCE_HTTPS=false
+    ~~~
+    **Después**
+    ~~~
+    APP_URL=https://${APP_URL_BASE} FORCE_HTTPS=true
+    ~~~
+* Una vez finalizado, guarde y salga del editor
+* Ejecute los siguientes comandos para eliminar la caché de la aplicación
+    ~~~
+    php artisan config:Cache
+    ~~~
+* Con eso habrá completado el lado de la herramienta, en ese momento hasta no tener un SSL configurado no podrá acceder a la herramienta
 
-## Create your first Post
 
-Create a file at `blog/2021-02-28-greetings.md`:
-
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
-
-Congratulations, you have made your first post!
-
-Feel free to play around and edit this post as much as you like.
-```
-
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+:::info IMPORTANTE
+    Recuerde habilitar el puerto 443 para poder tener acceso a la herramienta
+:::

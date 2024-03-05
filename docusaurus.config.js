@@ -8,9 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'MANUALES DE INSTALACIÓN',
+  tagline: 'Guía paso a paso para instalación eficiente de software',
+  favicon: 'img/6.png',
 
   // Set the production url of your site here
   url: 'https://github.com',
@@ -67,23 +67,23 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Info Persas',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/6.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Manuales',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Anderson18MD/prueba2',
             label: 'GitHub',
-            position: 'right',
+            position: 'left',
           },
         ],
       },
@@ -91,46 +91,32 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Manuales',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introduccion',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Script de Instalación',
+                to: '/docs/tutorial-basics/create-a-page',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Instalación del Facturador',
+                to: '/docs/tutorial-basics/create-a-blog-post',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Docker + GitLab + SSL',
+                to: '/docs/tutorial-basics/create-a-document',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Linux | Valet',
+                to: '/docs/tutorial-basics/deploy-your-site',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} InfoPersas.`,
       },
       prism: {
         theme: prismThemes.github,
